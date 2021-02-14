@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -a @hapi/code -t 100 -L -m 10000",
-    "build": "(cd ./client && npm install && ng build --prod) && npm install --prod",
+    "build": "npm install --prod --silent && (cd ./client && npm install --silent && ng build --prod)",
     "start": "node index.js"
   },
   "author": "Devin Stewart",

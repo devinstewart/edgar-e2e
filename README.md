@@ -9,11 +9,11 @@
 #### Visit: [`https://edgar-e2e.herokuapp.com/`](https://edgar-e2e.herokuapp.com/) for a demo.
 
 ## Instalation
-- You will need `node` version 12+ and `npm` version 6+ to build and run this program.
+- You will need `node` version 12 and `npm` version 6+ to build and run this program. **PLEASE NOTE:** This program only runs on `node` `12.x` at this time.
 - Once you have the prerequisites met you can type `npm build` from the root directory of the repository and all of the needed packages and build scripts will be run.
 
 ## Running
-- After the program is built, run `node .` from the root directory of the repository.
+- After the program is built, run `npm start` from the root directory of the repository.
 - You can then open your browser with the URL `http://localhost:3000` to use the program.
 
 ## Architecture
@@ -30,7 +30,7 @@
     - `GET` `/api/getDocuments/{cik}?page={pageNumber}`
         - Once a company is chosen, all of the EDGAR documents since 2001 can be retrieved.  Due to the large number of documents, only 100 results are returned at a time.
         The `page` query parameter allows for pagination through the documents.
-       
+
 ## Front End
 - This is truly a "Single Page App". All Angular code is in one component and one HTML Page.  If you would like to experiment with the Angular portion of the app,
 you can launch hapi.js in one terminal, switch to the `/client` directory in another terminal and run `ng serve`.
@@ -39,4 +39,5 @@ you can launch hapi.js in one terminal, switch to the `/client` directory in ano
 ## To Do's
 - Create mocks for better test covereage.
 - Use better pagination than _Prev Page_ and _Next Page_.
+- Move to React for lighter front end.
 - **You tell me**:  This is permissive open source, so feel free to fork, make contributions, open requests, etc.
