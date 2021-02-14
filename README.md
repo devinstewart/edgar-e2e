@@ -6,6 +6,8 @@
 
 #### This program demonstrates how you can use the POST `https://efts.sec.gov/LATEST/search-index` to embed searching EDGAR into your own program
 
+#### Visit: [`https://edgar-e2e.herokuapp.com/`](https://edgar-e2e.herokuapp.com/) for a demo.
+
 ## Instalation
 - You will need `node` version 12+ and `npm` version 6+ to build and run this program.
 - Once you have the prerequisites met you can type `npm build` from the root directory of the repository and all of the needed packages and build scripts will be run.
@@ -35,7 +37,6 @@ you can launch hapi.js in one terminal, switch to the `/client` directory in ano
 - You can then launch your browser at `http://localhost:4200`.  There is a proxy configuration that redirects any request starting with `/api` to `localhost:3000`.
 
 ## To Do's
-- Create a deployment for `Heroku` so people can see a demo without the need to download and install the code.
 - Create mocks for better test covereage.
 - Use better pagination than _Prev Page_ and _Next Page_.
 - **You tell me**:  This is permissive open source, so feel free to fork, make contributions, open requests, etc.
