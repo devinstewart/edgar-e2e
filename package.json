@@ -16,6 +16,7 @@
   "dependencies": {
     "@angular-devkit/build-angular": "^0.1102.0",
     "@angular/cli": "^11.2.0",
+    "@angular/compiler": "^11.2.0",
     "@angular/compiler-cli": "^11.2.0",
     "@hapi/hapi": "^20.1.0",
     "@hapi/inert": "^6.0.3",
