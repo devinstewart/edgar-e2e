@@ -1,0 +1,70 @@
+.queryBox {
+    min-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.searchResults {
+    z-index: 1;
+    cursor: pointer;
+    background-color: #F8F8F8;
+    position: absolute;
+    width: 300px;
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    border: 1px solid #DDD;
+    text-align: left;
+}
+
+.searchResult {
+    padding: 3px;
+    border-top: 1px solid #DDD;
+}
+.inputBox {
+    border: 1px solid #f7f7f7;
+    border-radius: 4pt;
+    color: #425062;
+    padding: .025em 0 .05em .2em;
+    margin: -.25em 0 .1em -.2em;
+    box-shadow: inset 3px 3px 6px rgb(17 43 92 / 15%);
+    width: 300px;
+    font-size: 1rem;
+    height: 30px;
+}
+
+.documentList {
+    margin: 20px auto 0px auto;
+    width: 300px;
+    max-height: calc(100vh - 260px);
+    overflow-y: auto;
+    text-align: left;
+}
+
+.listingBox {
+    width: 200px;
+    padding: 5px;
+    border-bottom: 1px solid #DDD;
+}
+
+.listingBoxRight {
+    width: 100px;
+}
+
+.document {
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+button {
+    font-weight: 400;
+    border: 1px solid transparent;
+    line-height: 1.5;
+    border-radius: .25rem;
+    background-color: dodgerblue;
+    color: #FFF;
+    outline: none;
+    padding: .375rem 30px .375rem 30px;
+    cursor: pointer;
+  }

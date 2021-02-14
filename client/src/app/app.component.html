@@ -1,1 +1,31 @@
-<h1>App Component</h1>
+<div class="queryBox">
+    <h1>Edgar Lookup</h1>
+    <p>Search for a company</p>
+    <div style="position: relative; width: 300px; margin: auto;">
+        <input class="inputBox" (keyup)="tickerSearch($event)" (focus)="tickerSearch($event)" [(ngModel)]="companyName">
+        <div class="searchResultsHolder">
+            <div class="searchResults" *ngIf="searchResults.length">
+                <div class="searchResult" *ngFor="let searchResult of searchResults" (click)="getDocumentList(searchResult)">{{ searchResult.name }}</div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="documentList.documents.length">
+        <p>{{ (documentList.page - 1) * 100 + 1 }} - {{ (documentList.page * 100 > documentList.total) ? documentList.total : documentList.page * 100 }} of {{ documentList.total }}</p>
+        <div class=documentList>
+            <div style="display: flex;" *ngFor="let document of documentList.documents">
+                <div class="listingBox">
+                    <span class="document" (click)="openDocument(document)">{{ document.formType }}</span>
+                </div>
+                <div class="listingBox listingBoxRight">{{ document.fileDate }}</div>
+            </div>
+        </div>
+        <div style="width: 300px; display: flex; margin: 20px auto 0px auto">
+            <div style="width: 150px; text-align: left;">
+                <button (click)="getDocumentList(searchResult, documentList.page - 1)"  *ngIf="documentList.page !== 1">Prev page</button>
+            </div>
+            <div style="width: 150px; text-align: right;">
+                <button (click)="getDocumentList(searchResult, documentList.page + 1)" *ngIf="(documentList.page * 100) < documentList.total">Next page</button>
+            </div>
+        </div>
+    </div>
+</div>
