@@ -10,7 +10,7 @@
 
 ## Instalation
 - You will need `node` version 12 and `npm` version 6+ to build and run this program. **PLEASE NOTE:** This program only runs on `node` `12.x` at this time.
-- Once you have the prerequisites met you can type `npm build` from the root directory of the repository and all of the needed packages and build scripts will be run.
+- Once you have the prerequisites met you can type `npm run build` from the root directory of the repository and all of the needed packages and build scripts will be run.
 
 ## Running
 - After the program is built, run `npm start` from the root directory of the repository.
@@ -20,7 +20,7 @@
 - The architecure of this program consists of two main open source projects:
     - `hapi.js` - A Node.js framework.
     - `Angular` - A TypeScript based SPA frontend framework.
-- When `npm build` is run, the Angular portion of the app is built, this completely resides in the `client` directory.  Once built its compiled files are served by hapi.js.
+- When `npm run build` is run, the Angular portion of the app is built, this completely resides in the `client` directory.  Once built its compiled files are served by hapi.js.
 
 ## APIs
 - There are two APIs that make are used in this program:
